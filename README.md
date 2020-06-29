@@ -1,4 +1,4 @@
-# egex Tests
+# Regex Tests
 Let's work on some regex. Using this set of numbers 123-939-7878 complete the following levels.
 
 You can use PHP, Python or JavaScript for this challenge.
