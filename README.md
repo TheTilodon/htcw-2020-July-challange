@@ -1,22 +1,22 @@
-#Regex Tests
+# egex Tests
 Let's work on some regex. Using this set of numbers 123-939-7878 complete the following levels.
 
 You can use PHP, Python or JavaScript for this challenge.
 Create one answer per level.
 
-##Level 1 - The simplest way
+## Level 1 - The simplest way
 Yes, this is a trick question. What is the simplest way to check for EXACTLY this set of numbers? Remember the simplest way is not always the correct way ;)
 
-##Level 2 - Character classes
+## Level 2 - Character classes
 Use character classes to check for the numbers. You can also use sets if you want
 
-##Level 3 - Short hand only
+## Level 3 - Short hand only
 Now simplify the answer using short hand syntax. You can also use sets if you want
 
-##Level 4 - Group those numbers
+## Level 4 - Group those numbers
 Let's turn those numbers into groups.
 
-##Level 5 - You see hyphens I see brackets
+## Level 5 - You see hyphens I see brackets
 What happens if the hyphens are sometimes open and closed brackets like this:
 
 (123)(939)(7878)
