@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HTCW - July Challange | RegEx</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="container">
+    <div>
+        <h2 class="form-signin-heading">Level 1 - The simplest way</h2>
+        <p>Yes, this is a trick question. What is the simplest way to check for EXACTLY this set of numbers? Remember
+            the simplest way is not always the correct way ;) Number to check: 123-939-7878</p>
+
+        <div class="input-group mb-3">
+            <input type="text" id="inputLevel1" class="form-control" placeholder="Please enter the number"
+                   aria-describedby="level1-addon2" aria-label="Please enter the number" data-level="1">
+            <div class="input-group-append">
+                <span class="input-group-text" id="level1-addon2">
+                    <svg class="bi bi-check-circle-fill d-none" id="Level1Right"
+                         fill="currentColor" width="24" height="24" color="green">
+                    <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                    </svg>
+                    <svg class="bi bi-x-circle-fill" id="Level1Wrong"
+                         fill="currentColor" width="24" height="24" color="red">
+                    <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#x-circle-fill"/>
+                    </svg>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+</div> <!-- /container -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
