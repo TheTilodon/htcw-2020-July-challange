@@ -25,7 +25,7 @@ function swapIcon(level, regExState) {
 /**
  * Execute the regex on the element
  * @param {*} element
- * @param {{[Symbol.match](string: string): (RegExpMatchArray | null)}} regExp
+ * @param {RegExp} regExp
  */
 function doRegEx(element, regExp) {
     let $elm = $(element);
