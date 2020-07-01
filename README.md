@@ -28,3 +28,7 @@ Or like this
 Adjust your answer to cope with hyphens and/or brackets.
 
 [Challange can be found here](https://codechallenges.howtocodewell.net/2020/july)
+
+# Instructions
+## JavaScript Version
+If you want to run and check the Levels you need npm. Go to the folder JavaScript and run *npm i* to load the dependencies. 
