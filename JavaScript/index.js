@@ -1,10 +1,13 @@
 $(function () {
-    let $inputLevel1 = $('#inputLevel1');
-    let lvl1RegExp = new RegExp('123-939-7878', 'ig');
-    $inputLevel1.on('keyup', function () {
-        doRegEx(this, lvl1RegExp);
-    });
-
+    $('.regexInput').each((index, element) => {
+        console.log(element);
+        let $element = $(element);
+        let regExp = new RegExp($element.data('regex'), 'ig');
+        $element.on('keyup', (elm) => {
+                doRegEx(elm.target, regExp);
+            }
+        );
+    })
 });
 
 /**

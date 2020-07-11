@@ -31,8 +31,9 @@
             the simplest way is not always the correct way ;) Number to check: 123-939-7878</p>
 
         <div class="input-group mb-3">
-            <input type="text" id="inputLevel1" class="form-control" placeholder="Please enter the number"
-                   aria-describedby="level1-addon2" aria-label="Please enter the number" data-level="1">
+            <input type="text" id="inputLevel1" class="form-control regexInput" placeholder="Please enter the number"
+                   aria-describedby="level1-addon2" aria-label="Please enter the number" data-level="1"
+                   data-regex="123-939-7878">
             <div class="input-group-append">
                 <span class="input-group-text" id="level1-addon2">
                     <svg class="bi bi-check-circle-fill d-none" id="Level1Right"
@@ -48,7 +49,109 @@
         </div>
     </div>
 
+    <div>
+        <h2 class="form-signin-heading">Level 2 - Character classes</h2>
+        <p>Use character classes to check for the numbers. You can also use sets if you want. <br/>
+            You can enter here a number with following conditions.<br/>
+            <3-Digits-from-One-to-Three>Minus<3-Digits-of-Three-or-Nine>Minus<4-Digits-of-Seven-or-Eight> <br/>
+            Examples: 111-993-7777 or 321-393-8887</p>
 
+        <div class="input-group mb-3">
+            <input type="text" id="inputLevel2" class="form-control regexInput" placeholder="Please enter the number"
+                   aria-describedby="level2-addon2" aria-label="Please enter the number" data-level="2"
+                   data-regex="[1-3]{3}-[39]{3}-[78]{4}">
+            <div class="input-group-append">
+                <span class="input-group-text" id="level2-addon2">
+                    <svg class="bi bi-check-circle-fill d-none" id="Level2Right"
+                         fill="currentColor" width="24" height="24" color="green">
+                    <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                    </svg>
+                    <svg class="bi bi-x-circle-fill" id="Level2Wrong"
+                         fill="currentColor" width="24" height="24" color="red">
+                    <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#x-circle-fill"/>
+                    </svg>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2 class="form-signin-heading">Level 3 - Short hand only</h2>
+        <p>Now simplify the answer using short hand syntax. You can also use sets if you want</p>
+
+        <div class="input-group mb-3">
+            <input type="text" id="inputLevel3" class="form-control regexInput" placeholder="Please enter the number"
+                   aria-describedby="level3-addon2" aria-label="Please enter the number" data-level="3"
+                   data-regex="[1-3]{3}-[39]{3}-[78]{4}">
+            <div class="input-group-append">
+                <span class="input-group-text" id="level3-addon2">
+                    <svg class="bi bi-check-circle-fill d-none" id="Level3Right"
+                         fill="currentColor" width="24" height="24" color="green">
+                    <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                    </svg>
+                    <svg class="bi bi-x-circle-fill" id="Level3Wrong"
+                         fill="currentColor" width="24" height="24" color="red">
+                    <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#x-circle-fill"/>
+                    </svg>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2 class="form-signin-heading">Level 4 - Group those numbers</h2>
+        <p>Let's turn those numbers into groups.</p>
+
+        <div class="input-group mb-3">
+            <input type="text" id="inputLevel4" class="form-control regexInput" placeholder="Please enter the number"
+                   aria-describedby="level3-addon2" aria-label="Please enter the number" data-level="4"
+                   data-regex="[1-3]{3}-[39]{3}-[78]{4}">
+            <div class="input-group-append">
+                <span class="input-group-text" id="level4-addon2">
+                    <svg class="bi bi-check-circle-fill d-none" id="Level4Right"
+                         fill="currentColor" width="24" height="24" color="green">
+                    <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                    </svg>
+                    <svg class="bi bi-x-circle-fill" id="Level4Wrong"
+                         fill="currentColor" width="24" height="24" color="red">
+                    <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#x-circle-fill"/>
+                    </svg>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2 class="form-signin-heading">Level 5 - You see hyphens I see brackets</h2>
+        <p>What happens if the hyphens are sometimes open and closed brackets like this:
+            <br/><br/>
+            (123)(939)(7878)
+            <br/><br/>
+            Or like this
+            <br/><br/>
+            (123)-939-(7878)
+            <br/><br/>
+            Adjust your answer to cope with hyphens and/or brackets.
+        </p>
+
+        <div class="input-group mb-3">
+            <input type="text" id="inputLevel5" class="form-control regexInput" placeholder="Please enter the number"
+                   aria-describedby="level3-addon2" aria-label="Please enter the number" data-level="5"
+                   data-regex="[1-3]{3}-[39]{3}-[78]{4}">
+            <div class="input-group-append">
+                <span class="input-group-text" id="level5-addon2">
+                    <svg class="bi bi-check-circle-fill d-none" id="Level5Right"
+                         fill="currentColor" width="24" height="24" color="green">
+                    <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#check-circle-fill"/>
+                    </svg>
+                    <svg class="bi bi-x-circle-fill" id="Level5Wrong"
+                         fill="currentColor" width="24" height="24" color="red">
+                    <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#x-circle-fill"/>
+                    </svg>
+                </span>
+            </div>
+        </div>
+    </div>
 </div> <!-- /container -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="index.js"></script>
