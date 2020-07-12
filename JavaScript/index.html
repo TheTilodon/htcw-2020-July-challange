@@ -33,7 +33,7 @@
         <div class="input-group mb-3">
             <input type="text" id="inputLevel1" class="form-control regexInput" placeholder="Please enter the number"
                    aria-describedby="level1-addon2" aria-label="Please enter the number" data-level="1"
-                   data-regex="123-939-7878">
+                   data-regex="123-939-7878$">
             <div class="input-group-append">
                 <span class="input-group-text" id="level1-addon2">
                     <svg class="bi bi-check-circle-fill d-none" id="Level1Right"
@@ -59,7 +59,7 @@
         <div class="input-group mb-3">
             <input type="text" id="inputLevel2" class="form-control regexInput" placeholder="Please enter the number"
                    aria-describedby="level2-addon2" aria-label="Please enter the number" data-level="2"
-                   data-regex="[1-3]{3}-[39]{3}-[78]{4}">
+                   data-regex="^[1-3]{3}-[39]{3}-[78]{4}$">
             <div class="input-group-append">
                 <span class="input-group-text" id="level2-addon2">
                     <svg class="bi bi-check-circle-fill d-none" id="Level2Right"
@@ -77,12 +77,13 @@
 
     <div>
         <h2 class="form-signin-heading">Level 3 - Short hand only</h2>
-        <p>Now simplify the answer using short hand syntax. You can also use sets if you want</p>
-
+        <p>Now simplify the answer using short hand syntax. You can also use sets if you want. <br/>
+            In this field you can enter a number which has three parts and is separated by -<br/>Some examples:<br/>
+            1-1-1, 12-34-56, 123-2-987654</p>
         <div class="input-group mb-3">
             <input type="text" id="inputLevel3" class="form-control regexInput" placeholder="Please enter the number"
                    aria-describedby="level3-addon2" aria-label="Please enter the number" data-level="3"
-                   data-regex="[\d]{3}-[\d]{3}-[\d]{4}">
+                   data-regex="^[\d]-[\d]-[\d]$">
             <div class="input-group-append">
                 <span class="input-group-text" id="level3-addon2">
                     <svg class="bi bi-check-circle-fill d-none" id="Level3Right"
@@ -100,12 +101,12 @@
 
     <div>
         <h2 class="form-signin-heading">Level 4 - Group those numbers</h2>
-        <p>Let's turn those numbers into groups.</p>
-
+        <p>Let's turn those numbers into groups.<br/>This will be a mix of level two and three. here you can enter
+            number which should look like XXX-XXX-XXXX, each X can be a number of your choice.</p>
         <div class="input-group mb-3">
             <input type="text" id="inputLevel4" class="form-control regexInput" placeholder="Please enter the number"
                    aria-describedby="level3-addon2" aria-label="Please enter the number" data-level="4"
-                   data-regex="[\d]{3}-[\d]{3}-[\d]{4}">
+                   data-regex="^[\d]{3}-[\d]{3}-[\d]{4}$">
             <div class="input-group-append">
                 <span class="input-group-text" id="level4-addon2">
                     <svg class="bi bi-check-circle-fill d-none" id="Level4Right"
@@ -137,7 +138,7 @@
         <div class="input-group mb-3">
             <input type="text" id="inputLevel5" class="form-control regexInput" placeholder="Please enter the number"
                    aria-describedby="level3-addon2" aria-label="Please enter the number" data-level="5"
-                   data-regex="(\(\d{3}\))([\(|-]\d{3}[\)|-])(\(\d{4}\))">
+                   data-regex="^(\(\d{3}\))([\(|-]\d{3}[\)|-])(\(\d{4}\))$">
             <div class="input-group-append">
                 <span class="input-group-text" id="level5-addon2">
                     <svg class="bi bi-check-circle-fill d-none" id="Level5Right"
